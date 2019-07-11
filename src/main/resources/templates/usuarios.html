@@ -11,7 +11,7 @@
 	</form>
 	
 	<div th:each="usuario : ${usuarios}">
-		<h3 th:text="${usuario.nome}"></h3>
+		<h3 style="color:red;" th:text="${usuario.nome}"></h3>
 		<p th:text="${usuario.email}"></p>
 	
 	</div>
