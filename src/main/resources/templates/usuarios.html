@@ -1,0 +1,21 @@
+<html>
+
+<body>
+
+	<form method="POST">
+		Nome: <input type="text" name="nome">
+		E-mail: <input type="text" name="email">
+		CPF: <input type="text" name="cpf">
+		Qual sua Idade?: <input type="text" name="idade">
+		<button type="submit">Cadastrar Usuario</button>
+	</form>
+	
+	<div th:each="usuario : ${usuarios}">
+		<h3 th:text="${usuario.nome}"></h3>
+		<p th:text="${usuario.email}"></p>
+	
+	</div>
+
+</body>
+
+</html>
