@@ -1,12 +1,15 @@
 <html>
 
 <body>
-
+	
+	<div th:each="erro : ${xablau}">
+		<span th:text="${erro}"></span>
+	</div>
 	<form method="POST">
 		Nome: <input type="text" name="nome">
 		E-mail: <input type="text" name="email">
 		CPF: <input type="text" name="cpf">
-		Qual sua Idade?: <input type="text" name="idade">
+		Qual sua Idade?: <input type="number" name="idade" value="0">
 		<button type="submit">Cadastrar Usuario</button>
 	</form>
 	
